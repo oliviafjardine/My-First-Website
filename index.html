@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head> <!--Title of tab in browser-->
+    <meta charset="UTF-8">
+    <title>Profile | Olivia Jardine</title>
+    <style>
+        body {
+            background-color: #ede0e6;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Olivia Jardine</h1> <!--biggest-->
+
+        <hr> <!--horizontal rule-->
+
+        <style>
+            ul{list-style-type: none;}
+        </style>
+        <nav aria-labelledby="contents">
+            <h2 id="contents">Contents</h2>
+            <ul>
+                <li>
+                    <aside>
+                        <details>
+                            <summary>
+                                <a href="#about">About Me</a> <!--anchor # shows in web address-->
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="#Photos">Photos</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#Biography">Biography</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </aside>
+                </li>
+                <li>
+                    <aside>
+                        <details>
+                            <summary>
+                                <a href="#goal">My Goals</a>
+                            </summary>
+                        </details>
+                    </aside>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+            
+            <section>
+                <h3 id="Photos">Photos</h3>
+                <figure>
+                    <img src="img/uw.heic" alt="UW" title="University of Washington!" 
+                    width="423" height="564" loading="lazy">
+                    <figcaption>
+                        Beautiful University of Washington
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/mt_rainer.HEIC" alt="Mt. Rainier" title="Mt. Rainier"
+                    width="304" height="402" loading="lazy">
+                    <figcaption>
+                        A Sunny Snowy Day Trip to Mount. Rainier, Washington
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/camping.HEIC" alt="camping" title="Mt. Rainier"
+                    width="393" height="524" loading="lazy">
+                    <figcaption>
+                        The Woody Adventure on Mount. Rainier
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3 id="Biography">Biography</h3>
+                <p>#MadeInChina: Small baby me was born in China, but within
+                6 months, I was adopted by my mom and dad and became an American.
+                Raised in Seattle, Washington, I enjoy exploring the ins and outs
+                of the big city. The abundance of sites, activies, food, and
+                beautiful nature has and will always carry my interest and
+                enjoyment. I would consider myself an curious person as I like
+                to try new things. This has led to my hobbies that include
+                creating art, going on walks, coding, listening to music, writing,
+                and quite frankly, anything that peaks my interest.
+                </p> <!--paragraph-->
+            </section>
+        </article>
+
+        <article id="goal">
+            <h2>My Goals</h2>
+
+            <p>As a person, I obviously hope to be successful, but more 
+            importantly, I hope to enjoy all the steps up to that point.
+            From different experiences, I see myself growing as a person for
+            the betterment of my personal self but also for the people and
+            society around me. As for my career goals, I plan to become
+            a member and contributor in the world of technology. I could be 
+            a software engineer, website designer, game or app developer, or
+            wherever I am drawn to.
+            </p> 
+        </article>
+    </main>
+
+    <hr>
+    <article id="contact">
+        <h2>Contact Me</h2>
+
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend><strong>Personal Info</strong></legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName"
+                    id="firstName" placeholder="Enter" autocomplete="on"
+                    required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName"
+                    id="lastName" placeholder="Enter" autocomplete="on"
+                    required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email"
+                    id="email" placeholder="Enter" required>
+                </p>
+                    <label for="phone">Phone Number (optional):</label>
+                    <input type="tel" name="phone"
+                    id="phone" placeholder="5555555555"
+                        pattern="[0-9]{3}[0-9]{3}[0-9][4]">
+                </p>
+                <br>
+                <label for="message">Additional Note (optional):</label>
+                <br>
+                <textarea name="nessage" id="message" cols="30" rows="10"
+                placeholder="Typer your message here..."></textarea>
+            </fieldset>
+            <br>
+                <button type="submit" formaction="after_submit.html" formmethod="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+        </form>
+    </article>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about_me.html">Olivia Jardine</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
+
+</html>
